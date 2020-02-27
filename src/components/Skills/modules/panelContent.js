@@ -28,6 +28,14 @@ const languages = {
     {
       name: 'Css',
       icon: 'css.png'
+    },
+    {
+      name: 'SQL',
+      icon: 'sql.png'
+    },
+    {
+      name: 'NoSQL',
+      icon: 'nosql.png'
     }
   ]
 }
@@ -54,6 +62,10 @@ const web = {
     {
       name: 'Laravel',
       icon: 'laravel.png'
+    },
+    {
+      name: 'REST API\'s',
+      icon: 'restapi.png'
     }
   ]
 }
@@ -130,6 +142,14 @@ const tools = {
     {
       name: 'Postman',
       icon: 'postman.png'
+    },
+    {
+      name: 'Auth0',
+      icon: 'auth0.png'
+    },
+    {
+      name: 'LetsEncrypt',
+      icon: 'letsencrypt.png'
     }
   ]
 }

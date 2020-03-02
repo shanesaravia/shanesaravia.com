@@ -56,6 +56,10 @@ const web = {
       icon: 'react.png'
     },
     {
+      name: 'Redux',
+      icon: 'redux.png'
+    },
+    {
       name: 'Express',
       icon: 'express.png'
     },
@@ -96,6 +100,10 @@ const databases = {
     {
       name: 'Google SQL',
       icon: 'googlesql.png'
+    },
+    {
+      name: 'Mongo DB',
+      icon: 'mongodb.png'
     }
   ]
 }

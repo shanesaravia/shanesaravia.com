@@ -10,6 +10,7 @@ import DefaultLayout from 'components/Layout/DefaultLayout';
 // Components
 import Home from 'components/Home';
 import Skills from 'components/Skills';
+import Employment from './components/Employment';
 import Error404 from 'components/Error404';
 
 // If you want your app to work offline and load faster, you can change
@@ -24,6 +25,7 @@ ReactDOM.render(
         <Switch>
           <DefaultLayout exact path='/' title='Home' component={ Home } />
           <DefaultLayout exact path='/skills' title='Skills' component={ Skills } />
+          <DefaultLayout exact path='/employment' title='Employment' component={ Employment } />
           <Route component={ Error404 } />
         </Switch>
       </MuiThemeProvider>

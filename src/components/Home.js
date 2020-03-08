@@ -2,19 +2,17 @@ import React from 'react';
 import { Typography, Grid, Paper } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles({
   header: {
-    fontFamily: 'Droid Serif'
-    // fontFamily: 'Lato Light'
+    fontFamily: 'Muli'
   },
   subheader: {
-    fontFamily: 'Lato Light',
-    // color: '#F0F0F0'
+    fontFamily: 'Quicksand'
   },
   paper: {
     padding: 40
   }
-}))
+})
 
 const Home = () => {
   const classes = useStyles();

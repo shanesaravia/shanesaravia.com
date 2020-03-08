@@ -6,13 +6,7 @@ const useStyles = makeStyles(theme => ({
   icon: {
     height: 80,
     marginRight: theme.spacing(2)
-    // borderRadius: '50%'
   },
-  // companyName: {
-  // },
-  // item: {
-  //   flex: 1
-  // },
   caption: {
     color: 'grey'
   },
@@ -50,7 +44,7 @@ const Job = props => {
     <>
       <Grid container>
         <Grid item>
-          <img src={icon} className={classes.icon} />
+          <img src={icon} alt='Company Logo' className={classes.icon} />
         </Grid>
         <Grid item>
           <Typography variant='h6' className={classes.companyName}>{companyName}</Typography>

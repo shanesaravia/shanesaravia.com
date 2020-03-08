@@ -68,7 +68,7 @@ const Skills = () => {
                     panel.content.map(skill => {
                       return (
                         <div className={classes.container} key={skill.name}>
-                          <img src={skill.icon} className={classes.icon} />
+                          <img src={skill.icon} alt='Skill/Tool Icon' className={classes.icon} />
                           <Typography className={classes.skillName}>
                             {skill.name}
                           </Typography>

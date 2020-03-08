@@ -1,14 +1,14 @@
 import React from 'react';
 import { Paper } from '@material-ui/core';
 import Job from './modules/Job';
-import content from './modules/JobContent';
+import content from './modules/jobContent';
 import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles({
   paper: {
     padding: 30
   }
-}))
+})
 
 const Employment = () => {
   const classes = useStyles();

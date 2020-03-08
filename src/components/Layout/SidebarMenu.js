@@ -4,7 +4,6 @@ import Divider from '@material-ui/core/Divider';
 import { Link } from 'react-router-dom';
 import { MenuList, MenuItem, ListItemIcon } from '@material-ui/core';
 import HomeIcon from '@material-ui/icons/Home';
-import ResumeIcon from '@material-ui/icons/Description';
 import SkillsIcon from '@material-ui/icons/Book';
 import EmploymentIcon from '@material-ui/icons/Work';
 import EducationIcon from '@material-ui/icons/School';
@@ -50,12 +49,7 @@ const SidebarMenu = props => {
       label: 'Education',
       icon: <EducationIcon />,
       link: '/education'
-    },
-    {
-      label: 'Resume',
-      icon: <ResumeIcon />,
-      link: '/resume'
-    },
+    }
   ]
   return (
     <MenuList>

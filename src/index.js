@@ -14,6 +14,7 @@ import Employment from 'components/Employment';
 import Projects from 'components/Projects';
 import Education from 'components/Education';
 import Error404 from 'components/Error404';
+import ErrorBoundary from 'components/ErrorBoundary';
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
@@ -22,6 +23,7 @@ serviceWorker.unregister();
 
 ReactDOM.render(
   <BrowserRouter>
+  <ErrorBoundary>
     <div>
       <MuiThemeProvider theme={ theme }>
         <Switch>
@@ -34,5 +36,6 @@ ReactDOM.render(
         </Switch>
       </MuiThemeProvider>
     </div>
+  </ErrorBoundary>
   </BrowserRouter>
   , document.querySelector('#root'));

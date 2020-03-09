@@ -28,10 +28,12 @@ const Job = props => {
   const { icon, companyName, jobTitle, dateRange, content, divider } = props;
 
   const returnContent = () => {
-    return content.map(point => (
-      <ListItem className={classes.listItem}>
+    return content.map((point, idx) => (
+      <ListItem className={classes.listItem} key={idx}>
         <ListItemIcon className={classes.bullet}>
-          {'•'}
+          <Typography variant='h6'>
+            {'•'}
+          </Typography>
         </ListItemIcon>
         <ListItemText
           primary={point}

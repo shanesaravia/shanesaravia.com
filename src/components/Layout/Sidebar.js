@@ -50,8 +50,7 @@ export default function Sidebar(props) {
   const classes = useStyles(props);
   const theme = useTheme();
   const { open, handleDrawerClose } = props;
-  console.log('props.drawerWidth: ', props.drawerWidth);
-  
+
   return (
     <React.Fragment>
       <Drawer

@@ -26,13 +26,13 @@ const Home = () => {
       alignItems='center'
       justify='center'
     >
-        <Typography variant='h2' className={classes.header}>Shane Saravia</Typography>
-        <Typography variant='caption' className={classes.subheader}>
-          I am a dedicated professional from Toronto, Ontario.
-        </Typography>
-        <Typography variant='caption' className={classes.subheader}>
-          Specializing in full stack software development.
-        </Typography>
+      <Typography variant='h2' className={classes.header}>Shane Saravia</Typography>
+      <Typography variant='caption' className={classes.subheader}>
+        I am a dedicated professional from Toronto, Ontario.
+      </Typography>
+      <Typography variant='caption' className={classes.subheader}>
+        Specializing in full stack software development.
+      </Typography>
     </Grid>
     </Paper>
   )

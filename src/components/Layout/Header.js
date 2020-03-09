@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
-    }),
+    })
   },
   appBarShift: props => ({
     width: `calc(100% - ${props.drawerWidth}px)`,
@@ -39,7 +39,7 @@ const useStyles = makeStyles(theme => ({
 }))
 
 const Header = props => {
-  const { handleDrawerOpen, open } = props;
+  const { handleDrawerOpen, open, hideIcon } = props;
   const classes = useStyles(props);
 
   return (
@@ -50,15 +50,19 @@ const Header = props => {
       })}
     >
       <Toolbar>
-        <IconButton
-          color="inherit"
-          aria-label="open drawer"
-          onClick={handleDrawerOpen}
-          edge="start"
-          className={clsx(classes.menuButton, open && classes.hide)}
-        >
-          <MenuIcon />
-        </IconButton>
+        {
+          hideIcon ? 
+          null : 
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            onClick={handleDrawerOpen}
+            edge="start"
+            className={clsx(classes.menuButton, open && classes.hide)}
+          >
+            <MenuIcon />
+          </IconButton>
+        }
         <Typography variant="h6" className={classes.title} noWrap>
           {props.title}
         </Typography>

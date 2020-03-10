@@ -1,6 +1,15 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Divider, Typography, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
+import {
+  Grid,
+  Divider,
+  Typography,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText
+} from '@material-ui/core';
+import PropTypes from 'prop-types';
 
 const useStyles = makeStyles(theme => ({
   icon: {
@@ -70,6 +79,15 @@ const Job = props => {
 
 Job.defaultProps = {
   divider: true
+}
+
+Job.propTypes = {
+  icon: PropTypes.string,
+  companyName: PropTypes.string,
+  jobTitle: PropTypes.string,
+  dateRange: PropTypes.string,
+  content: PropTypes.array,
+  divider: PropTypes.bool
 }
 
 export default Job;

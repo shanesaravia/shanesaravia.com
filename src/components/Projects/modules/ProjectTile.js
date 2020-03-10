@@ -9,6 +9,7 @@ import { IconButton,
         CardMedia } from '@material-ui/core';
 import CodeIcon from '@material-ui/icons/Code';
 import GlobeIcon from '@material-ui/icons/Public';
+import PropTypes from 'prop-types';
 
 const useStyles = makeStyles({
   root: {
@@ -86,6 +87,15 @@ const ProjectTile = props => {
       </CardContent>
     </Card>
   )
+}
+
+ProjectTile.propTypes = {
+  name: PropTypes.string,
+  tools: PropTypes.array,
+  description: PropTypes.string,
+  image: PropTypes.string,
+  liveUrl: PropTypes.string,
+  githubUrl: PropTypes.string
 }
 
 export default ProjectTile;

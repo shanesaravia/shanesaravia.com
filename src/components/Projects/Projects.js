@@ -18,8 +18,8 @@ const Projects = () => {
   return (
     <Grid container justify='center' className={classes.container}>
       {
-        projectsContent.map(project => (
-          <Grid item>
+        projectsContent.map((project, idx) => (
+          <Grid item key={idx}>
             <ProjectTile {...project} />
           </Grid>
         ))

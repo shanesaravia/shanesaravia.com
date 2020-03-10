@@ -9,7 +9,7 @@ import {
   Typography
 } from '@material-ui/core';
 
-const useStylesOverride = makeStyles(() => ({
+const useStylesOverride = makeStyles({
   expanded: {},
   root: {
     "&$expanded": {
@@ -17,7 +17,7 @@ const useStylesOverride = makeStyles(() => ({
       marginBottom: 20
     }
   }
-}))
+})
 
 const useStyles = makeStyles(theme => ({
   heading: {

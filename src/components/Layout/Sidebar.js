@@ -7,8 +7,7 @@ import IconButton from '@material-ui/core/IconButton';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import SidebarMenu from './SidebarMenu';
-
-// const drawerWidth = 240;
+import PropTypes from 'prop-types';
 
 const useStyles = makeStyles(theme => ({
   contentData: props => ({
@@ -52,7 +51,7 @@ export default function Sidebar(props) {
   const { open, handleDrawerClose } = props;
 
   return (
-    <React.Fragment>
+    <>
       <Drawer
         className={classes.drawer}
         variant="persistent"
@@ -78,6 +77,11 @@ export default function Sidebar(props) {
         <div className={classes.drawerHeader} />
         { props.content }
       </main>
-    </React.Fragment>
+    </>
   );
+}
+
+Sidebar.propTypes = {
+  open: PropTypes.bool,
+  handleCloseDrawer: PropTypes.func
 }

@@ -17,12 +17,10 @@ const DefaultLayout = ({ component: Component, title = null, ...rest }) => {
   const [open, setOpen] = React.useState(false);
 
   const handleDrawerOpen = () => {
-    console.log('handleDrawerOpen called')
     setOpen(true);
   };
   
   const handleDrawerClose = () => {
-    console.log('handleDrawerClosed called')
     setOpen(false);
   };
 

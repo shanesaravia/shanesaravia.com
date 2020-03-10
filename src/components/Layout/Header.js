@@ -1,13 +1,11 @@
 import React from 'react';
 import clsx from 'clsx';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import MenuIcon from '@material-ui/icons/Menu';
+import { AppBar, Toolbar, Typography, IconButton } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GithubIcon from '@material-ui/icons/GitHub';
+import PropTypes from 'prop-types';
 
 const useStyles = makeStyles(theme => ({
   appBar: {
@@ -99,6 +97,12 @@ const Header = props => {
       </Toolbar>
     </AppBar>
   )
+}
+
+Header.propTypes = {
+  handleDrawreOpen: PropTypes.func,
+  open: PropTypes.bool,
+  hideIcon: PropTypes.bool
 }
 
 export default Header;

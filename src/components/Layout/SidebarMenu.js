@@ -1,14 +1,13 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import Divider from '@material-ui/core/Divider';
 import { Link } from 'react-router-dom';
-import { MenuList, MenuItem, ListItemIcon } from '@material-ui/core';
+import { MenuList, MenuItem, ListItemIcon, Divider, Typography } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 import HomeIcon from '@material-ui/icons/Home';
 import SkillsIcon from '@material-ui/icons/Book';
 import EmploymentIcon from '@material-ui/icons/Work';
 import EducationIcon from '@material-ui/icons/School';
 import ProjectsIcon from '@material-ui/icons/Build';
-import { makeStyles } from '@material-ui/core/styles';
+import PropTypes from 'prop-types';
 
 const useStyles = makeStyles(theme => ({
   removeLink: {
@@ -72,6 +71,10 @@ const SidebarMenu = props => {
       })}
     </MenuList>
   )
+}
+
+SidebarMenu.propTypes = {
+  handleDrawerClose: PropTypes.func
 }
 
 export default SidebarMenu;

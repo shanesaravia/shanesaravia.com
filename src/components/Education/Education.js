@@ -9,14 +9,25 @@ import {
   TableRow,
   Paper 
 } from '@material-ui/core';
+import clsx from 'clsx';
 import rowData from './modules/rowData';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   icon: {
     height: 50,
     width: 'auto'
+  },
+  table: {
+    [theme.breakpoints.down('sm')]: {
+      zoom: '68%'
+    }
+  },
+  mobile: {
+    [theme.breakpoints.down('sm')]: {
+      padding: '14px 10px'
+    }
   }
-})
+}))
 
 const Education = () => {
   const classes = useStyles();
@@ -28,7 +39,7 @@ const Education = () => {
             <TableCell></TableCell>
             <TableCell>Type</TableCell>
             <TableCell>Source</TableCell>
-            <TableCell>Degree/Certificate</TableCell>
+            <TableCell>Degree / Certificate</TableCell>
             <TableCell>Completion Date</TableCell>
           </TableRow>
         </TableHead>
@@ -36,12 +47,12 @@ const Education = () => {
           {rowData.map(row => (
             <TableRow key={row.name}>
               <TableCell component="th" scope="row">
-                <img src={row.icon} alt='Education Source Logo' className={classes.icon} />
+                <img src={row.icon} alt='Education Source Logo' className={clsx(classes.icon, classes.mobile)} />
               </TableCell>
-              <TableCell>{row.type}</TableCell>
-              <TableCell>{row.source}</TableCell>
-              <TableCell>{row.name}</TableCell>
-              <TableCell>{row.completionDate}</TableCell>
+              <TableCell className={classes.mobile}>{row.type}</TableCell>
+              <TableCell className={classes.mobile}>{row.source}</TableCell>
+              <TableCell className={classes.mobile}>{row.name}</TableCell>
+              <TableCell className={classes.mobile}>{row.completionDate}</TableCell>
             </TableRow>
           ))}
         </TableBody>

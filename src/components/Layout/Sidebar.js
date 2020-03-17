@@ -17,9 +17,9 @@ const useStyles = makeStyles(theme => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen
     }),
-    marginLeft: -props.drawerWidth + theme.spacing(7) + 1,
+    marginLeft: -props.drawerWidth,
     [theme.breakpoints.up('sm')]: {
-      marginLeft: -props.drawerWidth + theme.spacing(9) + 1,
+      marginLeft: -props.drawerWidth + theme.spacing(10) + 1,
     },
   }),
   contentShift: () => ({
@@ -64,7 +64,7 @@ const useStyles = makeStyles(theme => ({
       duration: theme.transitions.duration.leavingScreen,
     }),
     // overflowX: 'hidden',
-    width: theme.spacing(7) + 1,
+    width: 0,
     [theme.breakpoints.up('sm')]: {
       width: theme.spacing(10) + 1,
     },
@@ -104,7 +104,7 @@ export default function Sidebar(props) {
       >
         <div className={classes.toolbar}>
           <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'rtl' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
         </div>
         <Divider />

@@ -9,6 +9,7 @@ import PropTypes from 'prop-types';
 
 const useStyles = makeStyles(theme => ({
   appBar: {
+    zIndex: theme.zIndex.drawer + 1,
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
@@ -26,7 +27,7 @@ const useStyles = makeStyles(theme => ({
     marginRight: theme.spacing(2),
   },
   title: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   hide: {
     display: 'none',
@@ -49,8 +50,8 @@ const Header = props => {
     >
       <Toolbar>
         {
-          hideIcon ? 
-          null : 
+          hideIcon ?
+          null :
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -65,9 +66,9 @@ const Header = props => {
           {props.title}
         </Typography>
         <div>
-          <a 
+          <a
             href='http://linkedin.com/in/shanesaravia'
-            target='_blank' 
+            target='_blank'
             className={classes.icon}
             rel='noopener noreferrer'
           >

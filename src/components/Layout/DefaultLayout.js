@@ -19,7 +19,7 @@ const DefaultLayout = ({ component: Component, title = null, ...rest }) => {
   const handleDrawerOpen = () => {
     setOpen(true);
   };
-  
+
   const handleDrawerClose = () => {
     setOpen(false);
   };

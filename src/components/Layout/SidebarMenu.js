@@ -14,14 +14,23 @@ const useStyles = makeStyles(theme => ({
     textDecoration: 'none',
     color: 'black'
   },
-  menuItem: {
-    padding: theme.spacing(2)
+  menuItem: props => ({
+    padding: theme.spacing(2),
+    flexDirection: props.open ? 'row' : 'column',
+  }),
+  icon: {
+    position: 'relative',
+    left: 15
+  },
+  smallLabel: {
+    fontSize: 12,
+    padding: theme.spacing(0, 5)
   }
 }))
 
 const SidebarMenu = props => {
-  const classes = useStyles();
-  const { handleDrawerClose } = props;
+  const classes = useStyles(props);
+  const { handleDrawerClose, open } = props;
 
   const menuOptions = [
     {
@@ -50,6 +59,7 @@ const SidebarMenu = props => {
       link: '/education'
     }
   ]
+
   return (
     <MenuList>
       {Object.entries(menuOptions).map(([k, v]) => {
@@ -58,10 +68,10 @@ const SidebarMenu = props => {
             {v.divider ? <Divider /> : null}
             <Link to={v.link} onClick={handleDrawerClose} className={classes.removeLink}>
               <MenuItem className={classes.menuItem}>
-                <ListItemIcon>
+                <ListItemIcon className={classes.icon}>
                   {v.icon}
                 </ListItemIcon>
-                <Typography>
+                <Typography className={open ? null : classes.smallLabel}>
                   {v.label}
                 </Typography>
               </MenuItem>

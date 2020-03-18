@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
   },
   container: {
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fill, 300px)',
+    gridTemplateColumns: 'repeat(4, 300px)',
     gridGap: 20
   }
 }))
@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
 
 const Home = () => {
   const classes = useStyles();
-  
+
   return (
     <Paper className={classes.paper}>
     <Grid

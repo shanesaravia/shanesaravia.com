@@ -12,12 +12,15 @@ const useStyles = makeStyles(theme => ({
     fontFamily: 'Quicksand'
   },
   paper: {
-    padding: 40
+    padding: theme.spacing(5),
+    [theme.breakpoints.down('sm')]: {
+      padding: theme.spacing(4)
+    }
   },
   featured: {
     fontFamily: 'Muli',
-    marginTop: 30,
-    marginBottom: 20
+    marginTop: theme.spacing(4),
+    marginBottom: theme.spacing(2)
   },
   container: {
     display: 'grid',
@@ -41,10 +44,7 @@ const Home = () => {
     >
       <Typography variant='h2' className={classes.header}>Shane Saravia</Typography>
       <Typography variant='caption' className={classes.subheader}>
-        I am a dedicated professional from Toronto, Ontario.
-      </Typography>
-      <Typography variant='caption' className={classes.subheader}>
-        Specializing in full stack software development.
+          I am a dedicated professional from Toronto, Ontario.<br />Specializing in full stack software development.
       </Typography>
       <Typography className={classes.featured} variant='h5'>
         Featured Projects

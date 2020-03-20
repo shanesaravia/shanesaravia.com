@@ -7,8 +7,8 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles({
   container: {
     display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fill, 300px)',
-    gridGap: 20
+    gridGap: 20,
+    gridTemplateColumns: 'repeat(auto-fit, 300px)'
   }
 })
 

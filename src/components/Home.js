@@ -21,8 +21,8 @@ const useStyles = makeStyles(theme => ({
   },
   container: {
     display: 'grid',
-    gridTemplateColumns: 'repeat(4, 300px)',
-    gridGap: 20
+    gridGap: 20,
+    gridTemplateColumns: 'repeat(auto-fit, 300px)'
   }
 }))
 

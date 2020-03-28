@@ -2,7 +2,7 @@ const content = {
   stereod: [
     'Built a company dashboard app including stats and analytics, file transfer tool, permissions system and email system using React/Redux, Node, Python and Mongodb.',
     'Developed and deployed features and bug fixes for in house applications to improve efficiency.',
-    'Responsible for developing software including plugins, addons, scripts, and UI’s to assist in the production of movies and T.V. shows(Software includes Nuke, Shotgun, Traffic and Flux).'
+    'Responsible for developing software including plugins, addons, scripts, and UI’s to assist in the production of movies and T.V. shows (Software includes Nuke, Shotgun, Traffic and Flux).'
   ],
   qublix: [
     'Responsible for developing features, bug fixes, and hot fixes in Python and PHP.',

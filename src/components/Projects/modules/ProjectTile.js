@@ -11,6 +11,7 @@ import CodeIcon from '@material-ui/icons/Code';
 import GlobeIcon from '@material-ui/icons/Public';
 import PropTypes from 'prop-types';
 
+// NOTES: Poppins font used for banners
 const useStyles = makeStyles({
   root: {
     width: 300,

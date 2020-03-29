@@ -1,10 +1,9 @@
 import React from 'react';
 import { Typography, Grid, Paper } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
-import projectsContent from '../Projects/modules/projectsContent';
-import ProjectTile from '../Projects/modules/ProjectTile';
 import Typed from 'react-typed';
 import FeaturedProjects from './modules/FeaturedProjects';
+import FeaturedSkills from './modules/FeaturedSkills';
 
 const useStyles = makeStyles(theme => ({
   headerSection: {
@@ -69,6 +68,7 @@ const Home = () => {
           </Typography>
         </div>
       </div>
+      <FeaturedSkills />
       <FeaturedProjects />
     </Grid>
     </Paper>

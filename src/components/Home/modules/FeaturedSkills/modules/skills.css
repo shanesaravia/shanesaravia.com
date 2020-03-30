@@ -1,124 +1,116 @@
-@keyframes enter1
-{
-  0% {opacity: 0; transform: translate(-50%.0); left: 50%}
-  15% {opacity: 0; left: 50%}
-  20% {opacity: 1; left: 60%}
-  90% {opacity: 1}
-  100% {opacity: 0}
-}
-
-@keyframes enter3
-{
-  0% {opacity: 0; transform: translate(-50%.0); left: 50%}
-  30% {opacity: 0; left: 50%}
-  35% {opacity: 1; left: 40%}
-  70% {opacity: 1}
-  80% {opacity: 0}
-  100% {opacity: 0}
-}
-
-
 @keyframes musing {
-    0% {transform: translate(-50%,0) rotate(-5deg);}
-    50% {transform: translate(-50%,0) rotate(5deg);}
-    100% {transform: translate(-50%,0) rotate(-5deg);}
+  0% {transform: translate(-50%,0) rotate(-5deg);}
+  50% {transform: translate(-50%,0) rotate(5deg);}
+  100% {transform: translate(-50%,0) rotate(-5deg);}
 }
 
 @keyframes looking {
-    0% {transform: translate(-50%,0);}
+  0% {transform: translate(-50%,0);}
   20% {transform: translate(-50%,0);}
-    80% {transform: translate(-50%,10%);}
+  80% {transform: translate(-50%,10%);}
   100% {transform: translate(-50%,0);}
 }
 
 @keyframes thinking {
-    0% {transform: translate(-50%,0);}
+  0% {transform: translate(-50%,0);}
   20% {transform: translate(-50%,0);}
-    80% {transform: translate(-50%,10%);}
+  50% {transform: translate(-50%, 0) rotate(5deg);}
+  80% {transform: translate(-50%,10%) rotate(5deg);}
   100% {transform: translate(-50%,0);}
 }
 
-html
-{
-  position: relative;
-  height: 100%
+@keyframes blink {
+  0% {transform: scale(1, .05);}
+  5% {transform: scale(1, 1);}
+  95% {transform: scale(1, 1);}
+  100% {transform: scale(1, .05);}
 }
 
-body
-{
-  background-color: #FBFCF7;
-  position: relative;
+#face1 {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
   height: 100%;
-  &::after
-  {
-    content: "";
-    position: absolute;
-    display: block;
-    background-color: #EFF0EA;
-    height: 105px;
-    width: 100%;
-    bottom: 0;
-  }
+  left: 50%;
+  transform: translate(-50%,0);
+  transform-origin: 50% 90%;
+  animation-name: thinking;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-easing: ease-in-out;
+}
+
+#face2 {
+  position: relative;
+  left: 50%;
+  z-index: 9999;
+  transform: translate(-50%,0) rotate(-5deg);
+  transform-origin: 50% 90%;
+  animation-name: musing;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-easing: ease-in-out;
+}
+
+#face3 {
+  position: relative;
+  left: 50%;
+  z-index: 9999;
+  transform: translate(-50%,0) rotate(-5deg);
+  transform-origin: 50% 90%;
+  animation-name: musing;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-easing: ease-in-out;
+}
+
+#leftEye, #rightEye {
+  display: flex;
+  z-index: 9999;
+  position: absolute;
+  left: 43px;
+  top: -23px;
+  background: darkslategray;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  animation-name: blink;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-easing: ease-in-out;
+}
+
+#rightEye {
+  left: 57px;
 }
 
 #body1
 {
-  position: absolute;
-  left: 50%;
-  bottom: 100px;
-  transform: translate(-50%,0);
+  position: relative;
+  top: 30px;
 }
 
 #body2
 {
-  position: absolute;
-  left: 60%;
-  bottom: 100px;
-  transform: translate(-50%,0);
-  animation-name: enter1;
-   animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-easing: ease-in-out;
+  position: relative;
+  top: 30px;
 }
 
 #body3
 {
-  position: absolute;
-  left: 40%;
-  bottom: 100px;
-  transform: translate(-50%);
-  animation-name: enter3;
-   animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-easing: ease-in-out;
-}
-
-#body1,#body2,#body3
-{
-  z-index: 10;
-  &::after
-  {
-    width: 80px;
-    height: 40px;
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -35px;
-    left: 50%;
-    transform: translate(-50%);
-  }
+  position: relative;
+  top: 30px;
 }
 
 #head1
 {
   position: absolute;
-  left: 0;
   top: -45px;
   left: 50%;
   transform: translate(-50%,0);
   transform-origin: 50% 90%;
   animation-name: thinking;
-   animation-duration: 2s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-easing: ease-in-out;
 }
@@ -132,7 +124,7 @@ body
   transform: translate(-50%,0);
   transform-origin: 50% 90%;
   animation-name: looking;
-   animation-duration: 3s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-easing: ease-in-out;
 }
@@ -146,7 +138,7 @@ body
   transform: translate(-50%,0) rotate(-5deg);
   transform-origin: 50% 90%;
   animation-name: musing;
-   animation-duration: 2s;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-easing: ease-in-out;
 }

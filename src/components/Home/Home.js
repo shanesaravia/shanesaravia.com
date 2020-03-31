@@ -7,7 +7,9 @@ import FeaturedSkills from './modules/FeaturedSkills';
 
 const useStyles = makeStyles(theme => ({
   headerSection: {
-    backgroundColor: 'black',
+    backgroundColor: '#323232',
+    // background: 'linear-gradient(#4791db, #323232)',
+
     padding: 0,
     margin: '-40px -40px 0 -40px',
     width: 'calc(100% + 80px)',

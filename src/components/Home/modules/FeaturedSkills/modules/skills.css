@@ -1,13 +1,16 @@
+/* Head Animations*/
 @keyframes musing {
   0% {transform: translate(-50%,0) rotate(-5deg);}
   50% {transform: translate(-50%,0) rotate(5deg);}
   100% {transform: translate(-50%,0) rotate(-5deg);}
 }
 
-@keyframes looking {
+@keyframes reading {
   0% {transform: translate(-50%,0);}
-  20% {transform: translate(-50%,0);}
-  80% {transform: translate(-50%,10%);}
+  30% {transform: translate(-50%,0) scale(1.05,1.05);}
+  40% {transform: translate(-50%,10%) scale(1.1,1.1) rotate(2.5deg);}
+  70% {transform: translate(-50%,10%) scale(1.1,1.1) rotate(2.5deg);}
+  80% {transform: translate(-50%,10%) scale(1.1,1.1);}
   100% {transform: translate(-50%,0);}
 }
 
@@ -18,6 +21,17 @@
   80% {transform: translate(-50%,10%) rotate(5deg);}
   100% {transform: translate(-50%,0);}
 }
+/* Head Animations End */
+
+/* Eyes Animations */
+@keyframes readingEyes {
+  0% {transform: translate(-50%,0);}
+  30% {transform: translate(-50%,0) scale(1.05,1.05)}
+  40%, 60% {transform: translate(-49%,10%) scale(1.1,1.1) rotate(2.5deg);}
+  50%, 70% {transform: translate(-51%,10%) scale(1.1,1.1) rotate(2.5deg);}
+  80% {transform: translate(-49%,10%) scale(1.1,1.1);}
+  100% {transform: translate(-50%,0);}
+}
 
 @keyframes blink {
   0% {transform: scale(1, .05);}
@@ -25,15 +39,16 @@
   95% {transform: scale(1, 1);}
   100% {transform: scale(1, .05);}
 }
+/* Eyes Animations End */
 
 #face1 {
   position: absolute;
   z-index: 9999;
   width: 100%;
-  height: 100%;
+  height:50%;
   left: 50%;
-  transform: translate(-50%,0);
-  transform-origin: 50% 90%;
+  transform: translate(-10%, 0);
+  transform-origin: 50% 20%;
   animation-name: thinking;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -41,13 +56,15 @@
 }
 
 #face2 {
-  position: relative;
-  left: 50%;
+  position: absolute;
   z-index: 9999;
-  transform: translate(-50%,0) rotate(-5deg);
-  transform-origin: 50% 90%;
-  animation-name: musing;
-  animation-duration: 2s;
+  width: 100%;
+  height: 70%;
+  left: 50%;
+  transform: translate(-50%,0);
+  transform-origin: 50% 20%;
+  animation-name: readingEyes;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-easing: ease-in-out;
 }
@@ -123,8 +140,8 @@
   left: 50%;
   transform: translate(-50%,0);
   transform-origin: 50% 90%;
-  animation-name: looking;
-  animation-duration: 3s;
+  animation-name: reading;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-easing: ease-in-out;
 }

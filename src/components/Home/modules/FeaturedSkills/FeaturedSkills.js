@@ -16,14 +16,14 @@ const FeaturedSkills = () => {
   return (
     <>
       <Typography className={classes.featured} variant='h5'>
-        Featured Skills
+        Top Skills
       </Typography>
       <Grid container>
         <Grid container item xs={6} justify='center'>
           <Skills body='body1' head='head3' face='face3' />
         </Grid>
         <Grid container item xs={6} justify='center'>
-          <Skills body='body2' head='head1' face='face1' />
+          <Skills body='body2' head='head2' face='face2' />
         </Grid>
       </Grid>
     </>

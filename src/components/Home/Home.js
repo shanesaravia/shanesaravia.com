@@ -9,11 +9,15 @@ const useStyles = makeStyles(theme => ({
   headerSection: {
     backgroundColor: theme.palette.custom.grey,
     // background: 'linear-gradient(#4791db, #323232)',
-    padding: 0,
+    padding: 32,
     margin: '-40px -40px 0 -40px',
     width: 'calc(100% + 80px)',
     display: 'flex',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    [theme.breakpoints.down('sm')]: {
+      margin: '-32px -32px 0 -32px',
+      width: 'calc(100% + 64px)'
+    }
   },
   headerContainer: {
     margin: theme.spacing(5, 0)

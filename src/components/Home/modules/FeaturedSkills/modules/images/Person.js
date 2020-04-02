@@ -7,17 +7,23 @@ import Body from './Body';
 const useStyles = makeStyles(theme => ({
   laptop: {
     position: 'absolute',
-    top: '36%',
+    zIndex: 2,
+    top: '17%',
     left: '18%',
-    zIndex: 9992,
-    width: '65%'
+    width: '65%',
+    [theme.breakpoints.down('xs')]: {
+      top: '18%'
+    },
   },
   head: {
-    // position: 'relative',
     position: 'absolute',
-    width: '40%',
-    top: '-24%',
     left: '50%',
+    top: '-23%',
+    // position: 'relative',
+    // position: 'absolute',
+    width: '40%',
+    // top: '-24%',
+    // left: '50%',
     // top: 12,
     // // top: '4%'
     // [theme.breakpoints.down('md')]: {
@@ -26,19 +32,22 @@ const useStyles = makeStyles(theme => ({
     // [theme.breakpoints.down('sm')]: {
     //   top: 6
     // },
+    [theme.breakpoints.down('xs')]: {
+      top: '-22%'
+    },
   },
   body: {
   }
 }))
 
 const Person = props => {
-  const { width, className, laptop, hair, skin, headAnimation, chair, shirt, pants, shoes, face } = props;
+  const { className, laptop, hair, skin, headAnimation, chair, shirt, pants, shoes, face } = props;
   const laptopProps = { laptop };
   const headProps = { hair, skin, headAnimation, face };
   const bodyProps = { chair, skin, shirt, pants, shoes };
   const classes = useStyles();
   return (
-    <div width={width} className={className}>
+    <div className={className}>
       <Laptop className={classes.laptop} {...laptopProps} />
       <Head className={classes.head} {...headProps} />
       <Body className={classes.body} {...bodyProps} />
@@ -57,5 +66,6 @@ Person.defaultProps = {
   shoes: 'shoes1',
   head: 'head1',
   face: 'face1',
-  laptop: 'laptop1'
+  laptop: 'laptop1',
+  headAnimation: 'head1'
 }

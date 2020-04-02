@@ -43,13 +43,13 @@
 
 #face1 {
   /* position: relative; */
-  z-index: 9990;
+  /* z-index: 9990; */
   /* width: 30%; */
   /* height: 10%; */
   /* top: 4%; */
   /* left: 30px; */
-  display: flex;
-  flex-direction: row;
+  /* display: flex; */
+  /* flex-direction: row; */
   /* left: 20%; */
   /* left: 50%; */
   /* transform: translate(-50%,0) rotate(-5deg); */
@@ -96,16 +96,14 @@
 }
 
 #leftEye, #rightEye {
-  position: relative;
+  /* position: relative;
   display: flex;
   z-index: 9999;
   top: 30px;
-  /* position: relative; */
   left: 6px;
-  /* top: 10px; */
   background: darkslategray;
   width: 0.5vw;
-  height: 0.5vw;
+  height: 0.5vw; */
   border-radius: 50%;
   animation-name: blink;
   animation-duration: 1.5s;

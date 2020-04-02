@@ -12,34 +12,38 @@ const useStyles = makeStyles(theme => ({
     marginBottom: theme.spacing(2)
   },
   container: {
+    border: '4px solid red',
+    width: '100%',
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column',
+    alignItems: 'center',
     position: 'relative',
-    width: '50%',
-    maxWidth: 1000,
-    justifyContent: 'center',
-    [theme.breakpoints.down('sm')]: {
-      marginTop: 20,
-      width: '100%'
-    },
+    marginTop: '5%'
   },
   personContainer: {
+    border: '4px solid green',
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-around',
     width: '80%',
-    height: '100%'
+    height: '100%',
   },
   
   table: {
-    width: '100%',
     position: 'absolute',
-    top: '48%',
-    // [theme.breakpoints.down('sm')]: {
-    //   width: '75%'
-    // },
+    border: '1px solid orange',
+    width: '100%',
+    bottom: 0,
+    [theme.breakpoints.down('sm')]: {
+      bottom: 3
+    },
+    [theme.breakpoints.down('xs')]: {
+      bottom: 2
+    },
   },
-  person1: {
+  person: {
+    border: '1px solid blue',
+    // position: 'absolute',
     position: 'relative',
     width: '22%',
     height: '100%'
@@ -58,8 +62,8 @@ const FeaturedSkills = () => {
       </Typography>
       <div className={classes.container}>
         <div className={classes.personContainer}>
-          <Person className={classes.person1} headAnimation='head1' />
-          <Person className={classes.person1} headAnimation='head2' hair='hair2' shirt='shirt2' shoes='shoes2' pants='pants2' />
+          <Person className={classes.person} />
+          <Person className={classes.person} headAnimation='head2' hair='hair2' shirt='shirt2' shoes='shoes2' pants='pants2' />
         </div>
         <Table className={classes.table} />
       </div>

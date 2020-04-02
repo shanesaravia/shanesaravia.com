@@ -5,6 +5,12 @@
   100% {transform: translate(-50%,0) rotate(-5deg);}
 }
 
+@keyframes musing2 {
+  0% { transform: translate(-3%,0) rotate(-5deg);}
+  50% {transform: translate(3%,0) rotate(5deg);}
+  100% {transform: translate(-3%,0) rotate(-5deg);}
+}
+
 @keyframes reading {
   0% {transform: translate(-50%,0);}
   30% {transform: translate(-50%,0) scale(1.05,1.05);}
@@ -42,8 +48,12 @@
 /* Eyes Animations End */
 
 #face1 {
-  /* position: relative; */
-  /* z-index: 9990; */
+  width: 30px;
+  position: absolute;
+  z-index: 3;
+  width: 200px;
+  top: 40px;
+  height: 10px;
   /* width: 30%; */
   /* height: 10%; */
   /* top: 4%; */
@@ -96,14 +106,15 @@
 }
 
 #leftEye, #rightEye {
-  /* position: relative;
+  position: absolute;
   display: flex;
   z-index: 9999;
-  top: 30px;
-  left: 6px;
+  width: '10%';
+  /* top: 30px; */
+  /* left: 6px; */
   background: darkslategray;
-  width: 0.5vw;
-  height: 0.5vw; */
+  /* width: 0.5vw; */
+  height: 0.5vw;
   border-radius: 50%;
   animation-name: blink;
   animation-duration: 1.5s;
@@ -113,20 +124,20 @@
 
 #rightEye {
   /* left: 57px; */
-  left: 20px;
+  left: 2vh;
 }
 
 #head1
 {
-  /* position: absolute;
-  top: -65px;
-  left: 50%;
-  transform: translate(-50%,0);
-  transform-origin: 50% 90%; */
-  animation-name: musing;
+  position: absolute;
+  /* top: -65px; */
+  /* left: 50%; */
+  /* transform: translate(50%,0); */
+  transform-origin: 50% 0% 0;
+  animation-name: musing2;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  animation-easing: ease-in-out;
+  animation-easing: ease;
 }
 
 #head2
@@ -303,4 +314,71 @@
 
 .shoes2-2 {
   fill: #afafaf;
+}
+
+
+
+
+
+
+.cls-1 {
+  fill: #515151;
+}
+
+.cls-2 {
+  fill: #44515f;
+}
+
+.cls-3 {
+  fill: #282828;
+}
+
+.cls-4 {
+  fill: #374c89;
+}
+
+.cls-5 {
+  fill: #feac86;
+}
+
+.cls-6 {
+  fill: #12a697;
+}
+
+.cls-7 {
+  fill: #e0bfa6;
+}
+
+.cls-8 {
+  fill: #ea9c7d;
+}
+
+.cls-9 {
+  fill: #f7a584;
+}
+
+.cls-10 {
+  fill: #e0977e;
+}
+
+.cls-11 {
+  fill: #492a00;
+}
+
+.cls-12 {
+  fill: #b56b2a;
+}
+
+.cls-13 {
+  fill: #c16f33;
+}
+
+.cls-14 {
+  fill: #afafaf;
+}
+
+.cls-15 {
+  fill: #d8d8d8;
+  stroke-width: 2px;
+  stroke: url(#linear-gradient);
 }

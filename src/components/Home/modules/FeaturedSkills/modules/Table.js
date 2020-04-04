@@ -5,7 +5,6 @@ const TableImage = props => {
   return (
     <svg id="Layer_1" width={width} className={className} data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 581.67 141.91">
       <defs></defs>
-      <title>table</title>
       <g>
         <polygon className="table-1" points="141.35 21.49 86.89 135.5 74.48 135.5 94.01 86.44 94.03 86.4 94.84 84.36 124.82 21.49 141.35 21.49" />
         <polygon className="table-2" points="125.15 15.31 125 15.59 124.36 16.72 121.66 21.49 84.86 86.4 85.83 84.36 121.62 21.49 124.33 16.72 125.14 15.31 125.15 15.31" />

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography, Grid, Paper } from '@material-ui/core';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Typed from 'react-typed';
 import FeaturedProjects from './modules/FeaturedProjects';
 import FeaturedSkills from './modules/FeaturedSkills';
@@ -51,8 +51,6 @@ const useStyles = makeStyles(theme => ({
 
 const Home = () => {
   const classes = useStyles();
-  const theme = useTheme();
-
   const subheadings = [
     'Full Stack Software Developer',
     'Python Developer',

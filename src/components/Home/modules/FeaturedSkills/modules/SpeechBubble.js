@@ -1,6 +1,28 @@
 import React from 'react';
 import Typed from 'react-typed';
 import { Typography } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import clsx from 'clsx';
+
+const useStyles = makeStyles(theme => ({
+  bubble: {
+    fontSize: 'calc(100% + 0.2vmin)',
+    [theme.breakpoints.down('md')]: {
+      fontSize: '1.3vw'
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '1.1vw'
+    },
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '1.3vw'
+    }
+  },
+  bubbleText: props => ({
+    position: 'absolute',
+    top: '-25%',
+    transform: props.speechPosition === 'left' ? 'translate(-95%,0)' : 'translate(-8%,0)'
+  })
+}))
 
 const sayings = {
   python: ['This app is more complex so i\'ll use django instead of flask.'],
@@ -10,11 +32,12 @@ const sayings = {
 const SpeechBubble = props => {
   let { setTyped, speech, speechPosition } = props;
   const saying = sayings[speech];
+  const classes = useStyles(props);
 
   return (
-    <Typography>
+    <Typography className={classes.bubble}>
       <Typed
-        className={`speechBubble-${speechPosition}`}
+        className={clsx(classes.bubbleText, `speechBubble-${speechPosition}`)}
         strings={saying}
         typeSpeed={25}
         typedRef={typed => { setTyped(typed); }}

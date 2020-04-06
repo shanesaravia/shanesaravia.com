@@ -74,12 +74,17 @@
   animation-easing: ease-in-out;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
 .speechBubble-right {
   display: none;
-  padding: 1em;
-  border-radius: 10px;
-  background-color: #B4E7FF;
-  max-width: 32%;
 }
 
 .speechBubble-right:after {
@@ -94,16 +99,12 @@
 	border-bottom: 0;
 	border-left: 0;
 	margin-left: -1vmin;
-	margin-bottom: -2vmin;
+  margin-bottom: -2vmin;
+  animation: fadeIn ease 2s;
 }
-
 
 .speechBubble-left {
   display: none;
-  padding: 1em;
-  border-radius: 10px;
-  background-color: #B4E7FF;
-  max-width: 32%;
 }
 
 .speechBubble-left:after {
@@ -119,6 +120,7 @@
 	border-right: 0;
 	margin-right: -1vmin;
   margin-bottom: -2vmin;
+  animation: fadeIn ease 2s;
 }
 
 /*-----------------------------------------------------------------------------------*/

@@ -20,7 +20,11 @@ const useStyles = makeStyles(theme => ({
   bubbleText: props => ({
     position: 'absolute',
     top: '-25%',
-    transform: props.speechPosition === 'left' ? 'translate(-95%,0)' : 'translate(-8%,0)'
+    transform: props.speechPosition === 'left' ? 'translate(-95%,0)' : 'translate(-8%,0)',
+    padding: '1em',
+    borderRadius: 10,
+    backgroundColor: '#B4E7FF',
+    maxWidth: '32%'
   })
 }))
 

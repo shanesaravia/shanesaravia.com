@@ -24,7 +24,10 @@ const useStyles = makeStyles(theme => ({
     padding: '1em',
     borderRadius: 10,
     backgroundColor: '#B4E7FF',
-    maxWidth: '32%'
+    maxWidth: '32%',
+    [theme.breakpoints.down('xs')]: {
+      borderRadius: 4
+    }
   })
 }))
 

@@ -102,7 +102,7 @@
 	border-left: 0;
 	margin-left: -1vmin;
   margin-bottom: -2vmin;
-  animation: fadeIn ease 2s;
+  animation: fadeIn ease 4s;
 }
 
 .speechBubble-left {
@@ -122,7 +122,7 @@
 	border-right: 0;
 	margin-right: -1vmin;
   margin-bottom: -2vmin;
-  animation: fadeIn ease 2s;
+  animation: fadeIn ease 4s;
 }
 
 /*-----------------------------------------------------------------------------------*/

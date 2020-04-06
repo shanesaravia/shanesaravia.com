@@ -4,15 +4,20 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typed from 'react-typed';
 import FeaturedProjects from './modules/FeaturedProjects';
 import FeaturedSkills from './modules/FeaturedSkills';
+import clsx from 'clsx';
 
 const useStyles = makeStyles(theme => ({
   headerSection: {
-    backgroundColor: 'black',
-    padding: 0,
+    backgroundColor: theme.palette.custom.grey,
+    padding: 32,
     margin: '-40px -40px 0 -40px',
     width: 'calc(100% + 80px)',
     display: 'flex',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    [theme.breakpoints.down('sm')]: {
+      margin: '-32px -32px 0 -32px',
+      width: 'calc(100% + 64px)'
+    }
   },
   headerContainer: {
     margin: theme.spacing(5, 0)
@@ -20,6 +25,16 @@ const useStyles = makeStyles(theme => ({
   header: {
     fontFamily: 'Muli',
     color: 'white',
+  },
+  name: {
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '45px'
+    }
+  },
+  dynamic: {
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '20px'
+    }
   },
   subheader: {
     fontFamily: 'Quicksand',
@@ -36,7 +51,6 @@ const useStyles = makeStyles(theme => ({
 
 const Home = () => {
   const classes = useStyles();
-
   const subheadings = [
     'Full Stack Software Developer',
     'Python Developer',
@@ -54,8 +68,8 @@ const Home = () => {
     >
       <div className={classes.headerSection}>
         <div className={classes.headerContainer}>
-          <Typography variant='h1' className={classes.header}>Shane Saravia</Typography>
-          <Typography variant='h4' className={classes.header}>
+          <Typography variant='h1' className={clsx(classes.header, classes.name)}>Shane Saravia</Typography>
+          <Typography variant='h4' className={clsx(classes.header, classes.dynamic)}>
             <Typed
               strings={subheadings}
               typeSpeed={40}

@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
       fontSize: '1.1vw'
     },
     [theme.breakpoints.down('xs')]: {
-      fontSize: '1.3vw'
+      fontSize: '1.69vw'
     }
   },
   bubbleText: props => ({
@@ -26,14 +26,15 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: '#B4E7FF',
     maxWidth: '32%',
     [theme.breakpoints.down('xs')]: {
-      borderRadius: 4
+      borderRadius: 6,
+      top: '-42%'
     }
   })
 }))
 
 const sayings = {
   python: ['This app is more complex so i\'ll use django instead of flask.'],
-  javascript: ['This app is front end focused so i\'ll be using express, node and react.']
+  javascript: ['This app is front end focused so i\'ll be using express, node &amp; react.']
 }
 
 const SpeechBubble = props => {

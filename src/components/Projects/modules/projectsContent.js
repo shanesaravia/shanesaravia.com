@@ -1,5 +1,13 @@
 const projectsContent = [
   {
+    image: 'sortingvisualizer.png',
+    name: 'Sorting Visualizer',
+    description: 'Visualizer for various sorting algorithms including Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Heap Sort and Quick Sort. Time and space complexity is also displayed for each sorting algorithm.',
+    liveUrl: 'http://sorting-visualizer.shanesaravia.com',
+    githubUrl: 'https://github.com/shanesaravia/sorting-visualizer',
+    tools: ['ReactJS', 'AnimeJS']
+  },
+  {
     image: 'shanesaravia.png',
     name: 'shanesaravia.com',
     description: 'My portfolio. The current app you\'re seeing',

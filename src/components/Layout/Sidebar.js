@@ -21,6 +21,9 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.up('sm')]: {
       marginLeft: -props.drawerWidth + theme.spacing(10) + 1,
     },
+    [theme.breakpoints.down('xs')]: {
+      padding: 0
+    }
   }),
   contentShift: () => ({
     transition: theme.transitions.create('margin', {

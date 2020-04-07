@@ -6,6 +6,7 @@ import clsx from 'clsx';
 
 const useStyles = makeStyles(theme => ({
   bubble: {
+    zIndex: theme.zIndex.drawer + 2,
     fontSize: 'calc(100% + 0.2vmin)',
     [theme.breakpoints.down('md')]: {
       fontSize: '1.3vw'
@@ -14,7 +15,7 @@ const useStyles = makeStyles(theme => ({
       fontSize: '1.1vw'
     },
     [theme.breakpoints.down('xs')]: {
-      fontSize: '1.69vw'
+      fontSize: '1.8vw'
     }
   },
   bubbleText: props => ({

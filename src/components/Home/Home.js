@@ -20,7 +20,10 @@ const useStyles = makeStyles(theme => ({
     }
   },
   headerContainer: {
-    margin: theme.spacing(5, 0)
+    margin: theme.spacing(5, 0),
+    [theme.breakpoints.down('xs')]: {
+      margin: 0
+    }
   },
   header: {
     fontFamily: 'Muli',

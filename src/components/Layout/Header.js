@@ -32,6 +32,11 @@ const useStyles = makeStyles(theme => ({
   hide: {
     display: 'none',
   },
+  hideMobile: {
+    [theme.breakpoints.down('xs')]: {
+      display: 'none'
+    }
+  },
   icon: {
     color: 'white'
   }
@@ -69,7 +74,9 @@ const Header = props => {
           <a
             href='http://linkedin.com/in/shanesaravia'
             target='_blank'
-            className={classes.icon}
+            className={clsx(classes.icon, {
+              [classes.hideMobile]: open
+            })}
             rel='noopener noreferrer'
           >
             <IconButton
@@ -83,7 +90,9 @@ const Header = props => {
           <a
             href='https://github.com/shanesaravia'
             target='_blank'
-            className={classes.icon}
+            className={clsx(classes.icon, {
+              [classes.hideMobile]: open
+            })}
             rel='noopener noreferrer'
           >
             <IconButton

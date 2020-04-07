@@ -9,7 +9,7 @@ import PropTypes from 'prop-types';
 
 const useStyles = makeStyles(theme => ({
   appBar: {
-    zIndex: theme.zIndex.drawer + 2,
+    zIndex: theme.zIndex.drawer + 3,
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,

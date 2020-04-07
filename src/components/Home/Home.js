@@ -8,6 +8,7 @@ import clsx from 'clsx';
 
 const useStyles = makeStyles(theme => ({
   headerSection: {
+    zIndex: theme.zIndex.drawer + 1,
     backgroundColor: theme.palette.custom.grey,
     padding: 32,
     margin: '-40px -40px 0 -40px',

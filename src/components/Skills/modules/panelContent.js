@@ -263,4 +263,5 @@ const os = {
 }
 
 const sections = [languages, web, databases, tools, cloud, os]
+
 export default sections

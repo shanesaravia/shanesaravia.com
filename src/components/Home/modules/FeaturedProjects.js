@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-const featured = ['Sorting Visualizer', 'Movieflix', 'Finance Summary', 'Instapix'];
+const featured = ['Sorting Visualizer', 'Movieflix', 'Finance Summary', 'Spotlite'];
 const filtered = projectContent.filter(project => featured.includes(project.name));
 
 const FeaturedProjects = () => {
@@ -27,7 +27,7 @@ const FeaturedProjects = () => {
       <Typography className={classes.featured} variant='h5'>
         Featured Projects
       </Typography>
-      <Grid container justify='center' className={classes.container}>
+      <Grid container justifyContent='center' className={classes.container}>
         {
           filtered.map((project, idx) => (
             <Grid item key={idx}>

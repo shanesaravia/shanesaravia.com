@@ -27,7 +27,7 @@ const Error404 = props => {
       container
       direction="column"
       alignItems="center"
-      justify="center"
+      justifyContent="center"
       className={errorBoundary ? classes.errorBoundary : null}
     >
       <Grid item>

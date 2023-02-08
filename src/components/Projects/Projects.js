@@ -19,7 +19,7 @@ const Projects = () => {
   const classes = useStyles();
 
   return (
-    <Grid container justify='center' className={classes.container}>
+    <Grid container justifyContent='center' className={classes.container}>
       {
         projectsContent.map((project, idx) => (
           <Grid item key={idx}>

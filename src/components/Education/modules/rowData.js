@@ -48,6 +48,27 @@ const rowData = [
     name: 'Modern React with Redux',
     completionDate: 'September 2018',
   },
+  {
+    icon: 'udemy.png',
+    type: 'Course',
+    source: 'Udemy',
+    name: 'Complete Guide to Protocol Buffers 3',
+    completionDate: 'September 2022',
+  },
+  {
+    icon: 'udemy.png',
+    type: 'Course',
+    source: 'Udemy',
+    name: 'Understanding Typescript',
+    completionDate: 'September 2022',
+  },
+  {
+    icon: 'udemy.png',
+    type: 'Course',
+    source: 'Udemy',
+    name: 'Go: The Complete Developer\'s Guide (Golang)',
+    completionDate: 'October 2022',
+  },
 ]
 
 export default rowData;

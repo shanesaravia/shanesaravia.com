@@ -56,9 +56,10 @@ const useStyles = makeStyles(theme => ({
 const Home = () => {
   const classes = useStyles();
   const subheadings = [
-    'Full Stack Software Developer',
+    'Senior Software Engineer (Full Stack)',
     'Python Developer',
-    'Javascript Developer'
+    'Javascript/Typescript Developer',
+    'Golang Developer'
   ]
 
   return (
@@ -68,7 +69,7 @@ const Home = () => {
       spacing={0}
       direction='column'
       alignItems='center'
-      justify='center'
+      justifyContent='center'
     >
       <div className={classes.headerSection}>
         <div className={classes.headerContainer}>

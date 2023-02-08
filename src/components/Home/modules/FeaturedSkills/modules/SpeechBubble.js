@@ -35,7 +35,8 @@ const useStyles = makeStyles(theme => ({
 
 const sayings = {
   python: ['This app is more complex so i\'ll use django instead of flask.'],
-  javascript: ['This app is front end focused so i\'ll be using express, node &amp; react.']
+  javascript: ['This app is front end focused so i\'ll be using express, node &amp; react.'],
+  golang: ['This app handles important data so i\'ll need a statically typed language like golang.']
 }
 
 const SpeechBubble = props => {

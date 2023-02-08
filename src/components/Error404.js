@@ -19,7 +19,7 @@ const Error404 = () => {
       container
       direction="column"
       alignItems="center"
-      justify="center"
+      justifyContent="center"
     >
       <Grid item>
         <img src={'panda404.png'} alt='Sad Panda 404' className={classes.image} />

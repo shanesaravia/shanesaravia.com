@@ -6,15 +6,15 @@ import { BrowserRouter, Switch } from 'react-router-dom';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 import theme from './theme';
 // Layouts
-import DefaultLayout from 'components/Layout/DefaultLayout';
+import DefaultLayout from '@components/Layout/DefaultLayout';
 // Components
-import Home from 'components/Home';
-import Skills from 'components/Skills';
-import Employment from 'components/Employment';
-import Projects from 'components/Projects';
-import Education from 'components/Education';
-import Error404 from 'components/Error404';
-import ErrorBoundary from 'components/ErrorBoundary';
+import Home from '@components/Home';
+import Skills from '@components/Skills';
+import Employment from '@components/Employment';
+import Projects from '@components/Projects';
+import Education from '@components/Education';
+import Error404 from '@components/Error404';
+import ErrorBoundary from '@components/ErrorBoundary';
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

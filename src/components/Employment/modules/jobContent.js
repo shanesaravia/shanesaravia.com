@@ -1,4 +1,16 @@
 const content = {
+  super: [
+    'Lead and owned several projects including the addition of person to person electronic funds transfers in SuperCash.',
+    'Collaborated on the implementation of a rewards engine system including an API, third party integration and task queues.',
+    'Worked on features and bugs across teams and improved performance.',
+    'Responsible for mentoring others including new interns placed under my management and ensuring their success.',
+    'Interviewed candidates and responsible for finding high quality engineers for the company.'
+  ],
+  swept: [
+    'Responsible for leading a team of developers in creating new features, bug fixes and deployments.',
+    'Collaborated in the migration of the web app from php to python/javascript and the mobile app from ionic to react-native(typescript).',
+    'Improved company deployments and infrastructure for overall efficiency, reliability, and performance.'
+  ],
   stereod: [
     'Built a company dashboard app including stats and analytics, file transfer tool, permissions system and email system using React/Redux, Node, Python and Mongodb.',
     'Developed and deployed features and bug fixes for in house applications to improve efficiency.',

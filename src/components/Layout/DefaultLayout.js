@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route } from "react-router-dom";
-import Header from 'components/Layout/Header';
-import Sidebar from 'components/Layout/Sidebar';
+import Header from '@components/Layout/Header';
+import Sidebar from '@components/Layout/Sidebar';
 import { CssBaseline } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 

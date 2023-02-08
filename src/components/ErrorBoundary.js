@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { MuiThemeProvider } from '@material-ui/core/styles';
-import Error500 from 'components/Error500';
-import Header from 'components/Layout/Header';
+import Error500 from '@components/Error500';
+import Header from '@components/Layout/Header';
 import theme from '../theme';
 
 class ErrorBoundary extends Component {

@@ -2,6 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import PythonLogo from './logos/PythonLogo';
 import JavascriptLogo from './logos/JavascriptLogo';
+import TypescriptLogo from './logos/TypescriptLogo';
+import GolangLogo from './logos/GolangLogo';
 
 const useStyles = makeStyles({
   logo: {
@@ -14,7 +16,9 @@ const useStyles = makeStyles({
 
 const logos = {
   python: PythonLogo,
-  javascript: JavascriptLogo
+  javascript: JavascriptLogo,
+  typescript: TypescriptLogo,
+  golang: GolangLogo
 }
 
 const Logo = props => {

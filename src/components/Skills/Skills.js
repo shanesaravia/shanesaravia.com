@@ -3,9 +3,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import panelContent from './modules/panelContent';
 import { 
-  ExpansionPanel,
-  ExpansionPanelDetails,
-  ExpansionPanelSummary,
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
   Typography
 } from '@material-ui/core';
 
@@ -50,20 +50,20 @@ const Skills = () => {
       {
         panelContent.map((panel, idx) => {
             return (
-              <ExpansionPanel
+              <Accordion
               defaultExpanded
               className={classes.panel}
               key={idx}
               >
-              <ExpansionPanelSummary
+              <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls={`${panel.heading.toLowerCase()}-content`}
                 id={`${panel.heading.toLowerCase()}-header`}
                 classes={classesOverride}
               >
               <Typography className={classes.heading}>{panel.heading}</Typography>
-              </ExpansionPanelSummary>
-              <ExpansionPanelDetails className={classes.panelDetails}>
+              </AccordionSummary>
+              <AccordionDetails className={classes.panelDetails}>
                   {
                     panel.content.map(skill => {
                       return (
@@ -76,8 +76,8 @@ const Skills = () => {
                       )
                     })
                   }
-              </ExpansionPanelDetails>
-            </ExpansionPanel>
+              </AccordionDetails>
+            </Accordion>
           )
         })
       }

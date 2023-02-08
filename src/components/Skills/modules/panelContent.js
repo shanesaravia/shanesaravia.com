@@ -10,6 +10,14 @@ const languages = {
       icon: 'javascript.png'
     },
     {
+      name: 'Typescript',
+      icon: 'typescript.png'
+    },
+    {
+      name: 'Golang',
+      icon: 'golang.png'
+    },
+    {
       name: 'Node',
       icon: 'node.png'
     },
@@ -56,12 +64,44 @@ const web = {
       icon: 'react.png'
     },
     {
+      name: 'React Native',
+      icon: 'react.png'
+    },
+    {
+      name: 'React Query',
+      icon: 'reactquery.png'
+    },
+    {
+      name: 'XState',
+      icon: 'xstate.png'
+    },
+    {
       name: 'Redux',
       icon: 'redux.png'
     },
     {
+      name: 'Gin',
+      icon: 'gin.png'
+    },
+    {
       name: 'Express',
       icon: 'express.png'
+    },
+    {
+      name: 'NestJS',
+      icon: 'nestjs.png'
+    },
+    {
+      name: 'Svelte',
+      icon: 'svelte.png'
+    },
+    {
+      name: 'Jest',
+      icon: 'jest.png'
+    },
+    {
+      name: 'Pytest',
+      icon: 'pytest.png'
     },
     {
       name: 'Laravel',
@@ -132,12 +172,40 @@ const tools = {
       icon: 'celery.png'
     },
     {
+      name: 'Kafka',
+      icon: 'kafka.png'
+    },
+    {
       name: 'Material-UI',
       icon: 'materialui.png'
     },
     {
       name: 'Bootstrap',
       icon: 'bootstrap.png'
+    },
+    {
+      name: 'OpenAPI',
+      icon: 'openapi.png'
+    },
+    {
+      name: 'Protobuf',
+      icon: 'protobuf.png'
+    },
+    {
+      name: 'Jenkins',
+      icon: 'jenkins.png'
+    },
+    {
+      name: 'Github Actions',
+      icon: 'githubactions.png'
+    },
+    {
+      name: 'Datadog',
+      icon: 'datadog.png'
+    },
+    {
+      name: 'SwaggerUI',
+      icon: 'swaggerui.png'
     },
     {
       name: 'Nginx',
@@ -194,4 +262,6 @@ const os = {
   ]
 }
 
-export default [languages, web, databases, tools, cloud, os];
+const sections = [languages, web, databases, tools, cloud, os]
+
+export default sections

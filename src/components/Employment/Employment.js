@@ -15,6 +15,20 @@ const Employment = () => {
   return (
     <Paper className={classes.paper}>
       <Job
+        icon='super.png'
+        companyName='Super(Snapcommerce)'
+        jobTitle='Senior Software Engineer'
+        dateRange='2022 - Present'
+        content={content.super}
+      />
+      <Job
+        icon='swept.png'
+        companyName='Swept'
+        jobTitle='Senior Software Developer'
+        dateRange='2020 - 2022'
+        content={content.swept}
+      />
+      <Job
         icon='stereod.png'
         companyName='Stereo D'
         jobTitle='Software Developer/Technical Director'

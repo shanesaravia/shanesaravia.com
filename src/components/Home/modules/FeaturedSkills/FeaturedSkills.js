@@ -53,8 +53,19 @@ const FeaturedSkills = () => {
             shirt='shirt2'
             shoes='shoes2'
             pants='pants2'
-            logo='javascript'
+            logo='typescript'
             speech='javascript'
+            speechPosition='right'
+          />
+          <Person
+            headAnimation='head1'
+            eyesAnimation='eyes1'
+            hair='hair2'
+            shirt='shirt3'
+            shoes='shoes3'
+            pants='pants3'
+            logo='golang'
+            speech='golang'
             speechPosition='right'
           />
         </div>
